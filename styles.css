@@ -9,6 +9,8 @@ body {
 img {
     margin-top: 0;
     height: 300px;
+    user-drag: none;
+    -webkit-user-drag: none;
 }
 
 h1 {
