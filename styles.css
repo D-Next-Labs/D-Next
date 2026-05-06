@@ -1,0 +1,173 @@
+body {
+    color: white;
+    background: linear-gradient(30deg, #000008,#020410, #000106);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 1000px;
+}
+
+img {
+    margin-top: 0;
+    height: 300px;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.text {
+    font-weight: bold;
+    background: linear-gradient(135deg, #9a65d3, #867ae6, #6a87f0);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.slogan {
+    font-family: Verdana;
+    margin-top: -45px;
+    font-size: 20px;
+}
+
+.nav-bar {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 9999; 
+    align-items: center;
+    background: linear-gradient(30deg, #000008, #030004);
+    padding: 15px 20px;
+    box-sizing: border-box; 
+}
+
+.nav-bar::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  
+  width: 60%;              /* δεν πάει full width */
+  height: 3px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #080a1f,
+    #c4a5fb,
+    #080a1f,
+    transparent
+  );
+
+  border-radius: 999px;
+
+  box-shadow: 
+    0 0 8px #101034,
+    0 0 16px #3c3080,
+    0 0 24px rgba(168, 85, 247, 0.6);
+}
+
+.nav-menu {
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-bar li {
+    padding-top: 25px;
+    margin: 0 8px;
+}
+
+.main-content {
+    margin-top: 500px; 
+}
+
+.msg {
+    max-width: 700px; 
+    margin: 0 auto;
+    color: rgb(201, 201, 201);
+    text-align: center; 
+    
+    text-wrap: balance; 
+    
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.card-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card {
+    background-color: #060815;
+    border: #383655 3px solid;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    margin-right: 20px;
+    transition: all 0.3s;
+}
+
+.card:hover {
+    scale: calc(1.08);
+}
+
+.card img {
+    height: 150px;
+}
+
+.join {
+    font-size: 40px;
+    margin: 0;
+}
+
+.box {
+    background-color: #050915;
+    border: #101034 2px solid;
+    width: fit-content;
+    padding: 15px;
+    padding-top: 40px;
+    margin-bottom: 35px;
+    border-radius: 15px;
+}
+
+input {
+    padding: 12px;
+    font-size: 15px;
+    width: 250px;
+    border: #191b34 3px solid;
+    border-radius: 5px;
+    background-color: #0d1121;
+    color: white;
+}
+
+button {
+    padding: 12px;
+    font-size: 15px;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #67458b, #504987, #2e3c6c);
+    color: white;  
+    transition: all 0.3s;
+}
+
+button:hover {
+    margin-left: 15px;
+    scale: calc(1.2);
+}
+
+.card-link {
+    text-decoration: none; /* Αφαιρεί την υπογράμμιση */
+    color: inherit;        /* Διατηρεί τα χρώματα που έχεις ήδη ορίσει */
+    display: inline-block; /* Για να συμπεριφέρεται σωστά ως περιέκτης */
+}
+
+a {
+    background: linear-gradient(135deg, #9a65d3, #867ae6, #6a87f0);
+    -webkit-background-clip: text;
+    color: transparent;
+}
